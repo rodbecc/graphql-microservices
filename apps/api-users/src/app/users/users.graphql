@@ -1,0 +1,9 @@
+type User {
+  id: Int
+  name: String
+}
+
+type Query {
+  allUsers: [User]
+  selectedUser(id: Int!): User
+}
