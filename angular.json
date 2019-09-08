@@ -48,7 +48,8 @@
               "apps/api-users/tsconfig.spec.json"
             ],
             "exclude": [
-              "**/node_modules/**"
+              "**/node_modules/**",
+              "!apps/api-users/**"
             ]
           }
         },
