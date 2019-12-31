@@ -34,10 +34,10 @@
     "@nestjs/core": "6.10.13",
     "@nestjs/platform-express": "6.10.13",
     "reflect-metadata": "0.1.13",
-    "@nestjs/graphql": "6.5.1",
-    "apollo-server-express": "2.9.3",
-    "graphql": "14.5.4",
-    "graphql-tools": "4.0.5"
+    "@nestjs/graphql": "6.5.3",
+    "apollo-server-express": "2.9.15",
+    "graphql": "14.5.8",
+    "graphql-tools": "4.0.6"
   },
   "devDependencies": {
     "@angular/cli": "8.3.21",
