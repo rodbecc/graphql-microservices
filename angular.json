@@ -16,9 +16,8 @@
             "outputPath": "dist/apps/api-users",
             "main": "apps/api-users/src/main.ts",
             "tsConfig": "apps/api-users/tsconfig.app.json",
-            "assets": [
-              "apps/api-users/src/assets"
-            ]
+            "assets": ["apps/api-users/src/assets"],
+            "buildLibsFromSource": true
           },
           "configurations": {
             "production": {
@@ -43,21 +42,16 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/api-users/tsconfig.app.json",
-              "apps/api-users/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/api-users/**"
-            ]
+            "tsConfig": ["apps/api-users/tsconfig.app.json", "apps/api-users/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!apps/api-users/**"]
           }
         },
         "test": {
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "apps/api-users/jest.config.js",
-            "tsConfig": "apps/api-users/tsconfig.spec.json"
+            "tsConfig": "apps/api-users/tsconfig.spec.json",
+            "passWithNoTests": true
           }
         }
       }
