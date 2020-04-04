@@ -15,4 +15,4 @@ echo '==============================================='
 echo ''
 
 npm i --no-optional
-npm start
+npm run start:all
