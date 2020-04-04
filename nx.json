@@ -10,6 +10,13 @@
   "projects": {
     "api-users": {
       "tags": ["scope:shared", "type:api"]
+    },
+    "angular-app": {
+      "tags": ["scope:shared", "type:app"]
+    },
+    "angular-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["angular-app"]
     }
   },
   "tasksRunnerOptions": {

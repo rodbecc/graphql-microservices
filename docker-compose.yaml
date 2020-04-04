@@ -1,17 +1,18 @@
-version: "3.7"
+version: '3.7'
 
 services:
   nodejs:
     build:
       context: ./.docker
     container_name: node
-    command: ["./.docker/run.sh"]
+    command: ['./.docker/run.sh']
     depends_on:
       - postgres
     ports:
-      - "3333:3333"
+      - '3333:3333'
+      - '4200:4200'
     volumes:
-      - ./:/var/www
+      - ./:/var/www:delegated
     networks:
       - app-network
 
@@ -25,7 +26,7 @@ services:
       POSTGRES_PASSWORD: password
     tty: true
     ports:
-      - "5432:5432"
+      - '5432:5432'
     volumes:
       - dbdata:/var/lib/postgresql/data
       - ./postgresql/postgresql.conf:/etc/postgresql/postgresql.conf
