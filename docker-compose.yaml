@@ -11,7 +11,7 @@ services:
     ports:
       - '3333:3333'
     volumes:
-      - ./:/var/www
+      - ./:/var/www:delegated
     networks:
       - app-network
 
