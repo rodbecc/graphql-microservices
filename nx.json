@@ -12,7 +12,7 @@
       "tags": ["scope:shared", "type:api"]
     },
     "angular-app": {
-      "tags": []
+      "tags": ["scope:shared", "type:app"]
     },
     "angular-app-e2e": {
       "tags": [],
